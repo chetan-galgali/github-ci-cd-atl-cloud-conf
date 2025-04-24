@@ -1,0 +1,13 @@
+name: Test Building the project
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-project:
+    name: Build the project using maven
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clean and compile
+        run: mvn clean install
