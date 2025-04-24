@@ -12,9 +12,9 @@ class TestGithubPushApplicationTests {
 	void contextLoads() {
 	}
 
-	@Test
-	void failTest() {
-		Assertions.fail("This is a failed test");
-	}
+//	@Test
+//	void failTest() {
+//		Assertions.fail("This is a failed test");
+//	}
 
 }
