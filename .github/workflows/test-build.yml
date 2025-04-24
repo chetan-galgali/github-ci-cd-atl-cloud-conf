@@ -9,5 +9,14 @@ jobs:
     name: Build the project using maven
     runs-on: ubuntu-latest
     steps:
-      - name: Clean and compile
+      - name: Checkout the project
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'microsoft'
+
+      - name: Compile the project
         run: mvn clean install
